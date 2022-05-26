@@ -9,13 +9,29 @@
   }
 
   &__inner {
+    padding-top: 24px;
+    padding-bottom: 24px;
     display: flex;
     align-items: center;
   }
 
-  &__logo {}
+  &__logo {
+    height: 100%;
+  }
 
-  &__arrow {}
+  &__arrow {
+    display: inline-block;
+    width: 5%;
+    margin-right: 19px;
+    margin-left: 12px;
+    font-weight: 600;
+    padding-bottom: 7px;
+    align-self: center;
+    background-image: url("../img/arrow-green.svg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center bottom;
+  }
 
   &__input {}
 
@@ -25,9 +41,39 @@
 
   &__border {}
 
-  &__item {}
+  &__item {
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    transition: background-color 0.3s, border-radius 0.3s;
 
-  &__num {}
+    &:focus {
+      box-shadow: inset 0 0 0 3px #eff6e7;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 0 3px var(--silver-600);
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__num {
+    color: var(--red-900);
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1.3;
+    top: -11px;
+    left: 9px;
+    padding: 3px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: var(--white);
+    border-radius: 50%;
+  }
 }
 
 .header-top {
@@ -72,13 +118,26 @@
     letter-spacing: 0.03em;
     color: var(--white);
   }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.0001);
+    box-shadow: 0px 0px 0px 3px var(--green-100);
+    border-radius: 3px;
+  }
+
+  &:active {
+    box-shadow: none;
+    color: #e0edcf;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 // .container {}
 
 // .header-top--dark {}
-
-// .list-reset {}
 
 // .bottom {
 
@@ -88,6 +147,10 @@
 .catalog {
 
   &__button {
+    border: none;
+    padding: 13px 0;
+    padding-left: 12px;
+    margin-right: 38px;
     background-color: var(--white);
     color: var(--green-900);
     font-weight: 600;
@@ -102,34 +165,72 @@
 
 .menu {
 
-  &__burger {}
-}
+  &__burger {
+    cursor: pointer;
+    margin-right: 18px;
+    border: transparent;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+  }
 
-//   &__span {}
-// }
+  &__span {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: var(--green-900);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 25px;
+      height: 1px;
+      background-color: var(--green-900);
+      transition: top 0.5s, bottom 0.5s, transform 0.5s;
+    }
+  }
+
+  &__span::before {
+    top: 10px;
+  }
+
+  &__span::after {
+    bottom: 10px;
+  }
+}
 
 .sr-only {
   display: none;
 }
 
 .header-form {
+  position: relative;
+  margin-right: 58px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 16px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+  }
 
   &__input {
+    border-radius: 6px 0 0 6px;
     border: none;
-    position: relative;
+    padding: auto;
     padding-left: 51px;
-    width: 419px;
+    max-width: 419px;
     height: 50px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icon-search.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 20px;
-      height: 20px;
-    }
   }
 
   &__btn {
@@ -139,6 +240,18 @@
     background-color: var(--dark-800);
     color: var(--white);
     border-radius: 0 6px 6px 0;
+
+    &:focus {
+      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:hover {
+      background-color: rgba(49, 53, 43, 0.85);
+    }
   }
 }
 

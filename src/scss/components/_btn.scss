@@ -1,0 +1,13 @@
+.btn {
+  display: inline-block;
+  color: var(--white);
+  border-radius: 6px;
+
+  &--green {
+    background-color: var(--green-900);
+  }
+
+  &--dark {
+    background-color: var(--dark-900);
+  }
+}
