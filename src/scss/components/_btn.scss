@@ -2,10 +2,11 @@
   display: inline-block;
   color: var(--white);
   border-radius: 6px;
-
-  &--green {
-    background-color: var(--green-900);
-  }
+  padding: 12px 24px;
+  background-color: var(--green-900);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.15em;
 
   &--dark {
     background-color: var(--dark-900);
