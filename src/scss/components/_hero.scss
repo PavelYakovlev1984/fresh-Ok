@@ -1,7 +1,14 @@
 .hero {
+  height: 600px;
+  padding-top: 161px;
+  height: 100vh;
   position: relative;
 
   &__content {
+    bottom: 140px;
+    top: 140px;
+    left: 140px;
+    right: 140px;
     position: absolute;
     padding: 140px;
     max-width: 1290px;
@@ -37,7 +44,11 @@
     border: none;
   }
 
-  &__container {}
+  &__container {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
 
   &__image {
     background-image: url();
@@ -51,7 +62,14 @@
 
 .swiper-wrapper {}
 
-.swiper-slide {}
+.swiper-slide {
+  padding: 0;
+  color: $dark-500;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .image {}
 
@@ -64,7 +82,6 @@
 }
 
 .swiper-button-prev::after {
-  color: red;
   width: 19px;
   height: 32px;
 }

@@ -1,4 +1,7 @@
 .header {
+  position: absolute;
+  left: 0;
+  right: 0;
 
   &__top {
     background-color: var(--dark-500);
