@@ -25,7 +25,22 @@
 
   &__link {
     font-weight: 300;
+
+    &:hover {
+      background-color: #4d810c;
+    }
+
+    &:focus {
+      background-color: var(--green-900);
+      box-shadow: 0 0 0 4px #E0EDCF);
+    }
+
+    &:active {
+      background-color: var(--green-900);
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+    }
   }
+
 }
 
 .swiper {}
