@@ -1,4 +1,5 @@
 .hero {
+  outline: none;
   padding: 0;
   color: var(--dark-500);
   position: relative;
@@ -41,9 +42,10 @@
     background-color: var(--green-900);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
   }
+
+  //не смог сделать серый цвет не активнму состоянию стрелки
+  //не смог настрить фавикон
 }
-
-
 
 .swiper {}
 
@@ -64,5 +66,26 @@
 .swiper-button-next {}
 
 .slick-arrow {
-  background-color: red;
+  border: none;
+  outline: none;
+  color: var(--dark-500);
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgb(99 166 14 / 50%);
+  }
+
+  &:hover {
+    color: #63A60E;
+    background-color: #E0EDCF;
+  }
+
+  &:active {
+    background-color: #fff;
+  }
+
 }
