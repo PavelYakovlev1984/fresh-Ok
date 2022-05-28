@@ -32,16 +32,18 @@
 
     &:focus {
       background-color: var(--green-900);
-      box-shadow: 0 0 0 4px #E0EDCF);
+      box-shadow: 0 0 0 4px rgb(255 255 255 / 50%);
     }
 
-    &:active {
-      background-color: var(--green-900);
-      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
-    }
   }
 
+  &:active {
+    background-color: var(--green-900);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+  }
 }
+
+
 
 .swiper {}
 
@@ -60,3 +62,7 @@
 .swiper-button-prev {}
 
 .swiper-button-next {}
+
+.slick-arrow {
+  background-color: red;
+}
