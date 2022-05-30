@@ -1,0 +1,79 @@
+.top {
+
+  &__content {}
+}
+
+.product {
+  position: relative;
+  background: var(--white);
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  border-radius: 6px;
+  padding: 18px;
+  padding-top: 12px;
+  width: 300px; //ПЕРЕДЕЛАТЬ
+
+  &__top {}
+
+  &__left {}
+
+  &__badges {}
+
+  &__badg {}
+
+  &__badg--green {}
+
+  &__badg--red {}
+
+  &__badg--orange {}
+
+  &__heart {}
+
+  &__image {
+    position: relative;
+    content: "";
+    width: 298px;
+    height: 215px;
+
+    &::before {
+      display: block;
+      z-index: 10;
+      content: "";
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      background-color: red;
+      ;
+    }
+
+    &::after {}
+  }
+
+  &__switch {}
+
+  &__title {}
+
+  &__props {}
+
+  &__price {}
+
+  &__btn {}
+}
+
+.list-reset {}
+
+.image {
+
+  &__switch {}
+}
+
+.product-price {
+
+  &__current {}
+}
+
+.product-span {
+
+  &__old {}
+}
