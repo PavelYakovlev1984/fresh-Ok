@@ -1,0 +1,30 @@
+.footer {
+  background-color: #31352B;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  display: grid;
+
+  &__top {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 456px 231px 205px 205px 215px;
+    grid-template-rows: 36px 36px 36px;
+    gap: 0px 0px;
+    grid-template-areas: ". . . . ."
+      ". . . . ."
+      ". . . . .";
+  }
+
+  &__link {
+    color: var(--white);
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 0;
+  }
+
+}

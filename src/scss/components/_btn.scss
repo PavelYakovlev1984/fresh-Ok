@@ -12,4 +12,10 @@
   &--dark {
     background-color: var(--dark-900);
   }
+
+  &--white {
+    color: var(--green-900);
+    background-color: var(--white);
+    border: 1px solid var(--green-900);
+  }
 }

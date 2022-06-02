@@ -1,64 +1,226 @@
 .top {
+  padding: 72px 0;
 
-  &__content {}
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    grid-template-areas:
+      ". . . ."
+      ". . . .";
+    margin-bottom: 48px;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 24px;
+      margin-bottom: 51px;
+    }
+  }
+
+  &__link {
+    color: var(--dark-500);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    border: none;
+    outline: none;
+    background-color: var(--white);
+  }
+
+  &__button {
+    margin: 0 auto;
+    display: block;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #EFF6E7;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px rgba(99, 166, 14, 0.5);
+    }
+
+    &:active {
+      color: rgba(99, 166, 14, 0.5);
+      background-color: var(--white);
+      box-shadow: inset 0 10px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 .product {
   position: relative;
-  background: var(--white);
+  background-color: var(--white);
   border: 1px solid rgba(17, 17, 17, 0.2);
   border-radius: 6px;
-  padding: 18px;
-  padding-top: 12px;
-  width: 300px; //ПЕРЕДЕЛАТЬ
+  transition: border 0.3s;
 
-  &__top {}
+  &:hover {
+    border: 1px solid var(--green-900);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    padding-bottom: 7px;
+  }
 
   &__left {}
 
   &__badges {}
 
-  &__badg {}
+  &__badg {
+    border-radius: 6px;
+    padding: 3px 6px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
 
-  &__badg--green {}
+  }
 
-  &__badg--red {}
+  &__badg--green {
+    margin-bottom: 6px;
+    background-color: var(--green-900);
+  }
 
-  &__badg--orange {}
+  &__badg--red {
+    background-color: var(--red-900);
+    display: inline-block;
+  }
 
-  &__heart {}
+  &__badg--orange {
+    background-color: var(--orange-900);
+  }
+
+  &__heart {
+    border-radius: 3px;
+    padding: 6px;
+    padding-top: 9px;
+    transition: fill 0.3s, opacity 0.3s, box-shadow 0.3s, color 0.3s;
+
+    &:hover path {
+      fill: var(--yellow-900);
+    }
+
+    &:focus {
+      fill: var(--yellow-900);
+      opacity: 0.7;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 3px #e0edcf;
+      color: var(--silver-600);
+    }
+  }
 
   &__image {
-    position: relative;
+    z-index: 1;
     content: "";
+    position: relative;
+    display: block;
+    overflow: hidden;
     width: 298px;
     height: 215px;
 
     &::before {
-      display: block;
-      z-index: 10;
+      position: absolute;
       content: "";
       left: 0;
-      right: 0;
+      top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0);
-      background-color: red;
-      ;
+      background-color: rgba(0, 0, 0, 0.0);
+      transition: background-color 0.3s;
     }
 
-    &::after {}
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 48px;
+      height: 48px;
+      background-image: none;
+      left: 40%;
+      top: 40%;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+
+    &:hover::before {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &:hover::after {
+      background-color: #fff;
+      background-image: url("../img/top/icon-search.svg");
+    }
+
+    &:focus {}
+
+    &:active {}
   }
 
   &__switch {}
 
-  &__title {}
+  &__title {
+    padding: 18px;
+    padding-top: 15px;
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+  }
 
-  &__props {}
+  &__props {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 18px;
+    padding-top: 0;
+    margin: 0;
+  }
 
   &__price {}
 
-  &__btn {}
+  &__btn {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: fill 0.3s,
+      opacity 0.3s,
+      box-shadow 0.3s,
+      color 0.3s;
+
+    &:hover {
+      background-color: #4d800c;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px #E0EDCF;
+    }
+
+    &:active {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
 }
 
 .list-reset {}
@@ -75,5 +237,20 @@
 
 .product-span {
 
-  &__old {}
+  &__old {
+    text-decoration: line-through;
+    color: var(--silver-600);
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: var(--dark-900);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
