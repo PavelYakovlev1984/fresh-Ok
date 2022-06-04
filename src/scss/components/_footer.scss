@@ -1,17 +1,18 @@
 .footer {
+  font-weight: 400;
+  font-size: 14px;
   background-color: #31352B;
   color: var(--white);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
-  display: grid;
 
   &__top {
     padding-top: 120px;
     padding-bottom: 30px;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 456px 231px 205px 205px 215px;
+    grid-template-columns: 456px 231px 205px 215px 215px;
     grid-template-rows: 36px 36px 36px;
-    gap: 0px 0px;
+    gap: 0 0;
     grid-template-areas: ". . . . ."
       ". . . . ."
       ". . . . .";
@@ -27,4 +28,47 @@
     padding: 28px 0;
   }
 
+  &__img {
+    display: block;
+
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__payment {
+    display: flex;
+  }
+
+  &__img {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+}
+
+.social {
+  &__item:not(:last-child) {
+    margin-right: 11px;
+  }
+
+  &__link {
+    display: block;
+    transition: fill 0.3s, border-radius 0.3s, box-shadow 0.3s;
+
+    & path:hover {
+      fill: rgba(255, 255, 255, 0.7);
+    }
+
+    &:focus {
+      border-radius: 3px;
+      box-shadow: 0 0 0 3px #e0edcf;
+    }
+
+    & path:active {
+      fill: #e0edcf;
+    }
+  }
 }
