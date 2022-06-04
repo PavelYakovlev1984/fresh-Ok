@@ -89,10 +89,6 @@
     padding-bottom: 7px;
   }
 
-  &__left {}
-
-  &__badges {}
-
   &__badg {
     border-radius: 6px;
     padding: 3px 6px;
@@ -101,7 +97,6 @@
     font-weight: 700;
     font-size: 10px;
     line-height: 12px;
-
   }
 
   &__badg--green {
@@ -172,7 +167,6 @@
       transition: background-color 0.3s;
       background-repeat: no-repeat;
       background-position: center;
-
     }
 
     &:hover::before {
@@ -183,13 +177,7 @@
       background-color: #fff;
       background-image: url("../img/top/icon-search.svg");
     }
-
-    &:focus {}
-
-    &:active {}
   }
-
-  &__switch {}
 
   &__title {
     padding: 18px;
@@ -209,8 +197,6 @@
     padding-top: 0;
     margin: 0;
   }
-
-  &__price {}
 
   &__btn {
     width: 32px;

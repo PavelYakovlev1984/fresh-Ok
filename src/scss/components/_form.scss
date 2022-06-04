@@ -33,21 +33,5 @@
     background-color: var(--dark-800);
     color: var(--white);
     border-radius: 0 6px 6px 0;
-
-    &--green {
-      background-color: var(--green-900);
-    }
-
-    &:focus {
-      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.5);
-    }
-
-    &:hover {
-      background-color: rgba(49, 53, 43, 0.85);
-    }
   }
 }
