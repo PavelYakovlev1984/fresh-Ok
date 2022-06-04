@@ -30,9 +30,24 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 140%;
-    border: none;
+    border: 2px solid transparent;
     outline: none;
     background-color: var(--white);
+
+    &:hover {
+      color: var(--green-900);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px #E0EDCF;
+      border-radius: 3px;
+      color: #505050;
+    }
+
+    &:active {
+      border-bottom: 2px solid #E0EDCF;
+      box-shadow: none;
+    }
   }
 
   &__button {
