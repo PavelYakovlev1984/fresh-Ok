@@ -6,6 +6,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 
   &__top {
+    position: relative;
     padding-top: 120px;
     padding-bottom: 30px;
     display: grid;
@@ -16,6 +17,13 @@
     grid-template-areas: ". . . . ."
       ". . . . ."
       ". . . . .";
+  }
+
+  &__logo {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 30px;
   }
 
   &__link {
