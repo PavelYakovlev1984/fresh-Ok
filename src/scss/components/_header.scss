@@ -25,7 +25,9 @@
   }
 
   &__logo svg {
+    margin-right: 42px;
     height: 60px;
+    width: 200px;
     fill: #fff;
   }
 
@@ -48,15 +50,22 @@
     display: flex;
   }
 
-  &__border {
-    transition: background-color 0.3s, border-radius 0.3s;
+  &__border {}
+
+  &__item {
+    display: block;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    transition: background-color 0.3s,
+      border-radius 0.3s;
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.1);
     }
 
     &:focus {
-      box-shadow: inset 0px 0px 0px 3px #EFF6E7;
+      box-shadow: 0 0 0 4px #E0EDCF;
     }
 
     &:active {
@@ -64,15 +73,10 @@
     }
   }
 
-  &__item {
-    display: block;
-    padding: 10px;
-    border-radius: 3px;
-    position: relative;
-  }
-
   &__item svg {
     fill: #fff;
+    height: 24px;
+    width: 32px;
   }
 
   &__num {
@@ -98,8 +102,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  &__img {}
 
   &__list {
     display: flex;

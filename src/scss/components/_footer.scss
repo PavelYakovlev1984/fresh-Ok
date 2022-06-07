@@ -26,6 +26,12 @@
     top: 30px;
   }
 
+  &__logo svg {
+    height: 60px;
+    width: 200px;
+    fill: #fff;
+  }
+
   &__link {
     color: var(--white);
   }
