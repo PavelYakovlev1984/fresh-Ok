@@ -24,6 +24,11 @@
     height: 100%;
   }
 
+  &__logo svg {
+    height: 60px;
+    fill: #fff;
+  }
+
   &__arrow {
     display: inline-block;
     width: 5%;
@@ -37,8 +42,6 @@
     background-size: 70%;
     background-position: center bottom;
   }
-
-  &__input {}
 
   &__social {
     outline: none;
@@ -66,6 +69,10 @@
     padding: 10px;
     border-radius: 3px;
     position: relative;
+  }
+
+  &__item svg {
+    fill: #fff;
   }
 
   &__num {
