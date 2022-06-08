@@ -2,15 +2,13 @@
   outline: none;
   padding: 0;
   color: var(--dark-500);
-  position: relative;
 
   &__content {
     max-width: 867px;
     background-color: rgba(255, 255, 255, 0.8);
     margin: 0 auto;
     padding: 26px;
-    padding-top: 140px;
-    margin-bottom: 30px;
+    margin-top: 140px;
   }
 
   &__title {
@@ -33,6 +31,7 @@
     font-size: 16px;
     line-height: 140%;
     margin: 0;
+    margin-bottom: 30px;
   }
 
   &__link {
@@ -53,9 +52,6 @@
     background-color: var(--green-900);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
   }
-
-  //не смог сделать серый цвет не активнму состоянию стрелки
-  //не смог настрить фавикон
 }
 
 .swiper {}
@@ -67,6 +63,8 @@
 }
 
 .swiper-slide {
+  min-height: 600px;
+  bottom: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
