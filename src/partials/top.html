@@ -2,24 +2,34 @@
   <div class="container">
     <h2 class="title top__title">Топовые товары</h2>
     <ul class="top__filter list-reset">
-      <li class="top__item" data-filter="all">
-        <button class="top__link" type="button">Все товары</button>
+      <li class="top__item">
+        <button class="top__link" type="button" data-tabs-path="main">
+          Все товары
+        </button>
       </li>
-      <li class="top__item" data-filter=".category-a">
-        <button class="top__link" type="button">Фрукты</button>
+      <li class="top__item">
+        <button class="top__link" type="button" data-tabs-path="main">
+          Фрукты
+        </button>
       </li>
-      <li class="top__item" data-filter=".category-b">
-        <button class="top__link" type="button">Овощи</button>
+      <li class="top__item">
+        <button class="top__link" type="button" data-tabs-path="main">
+          Овощи
+        </button>
       </li>
-      <li class="top__item" data-filter=".category-c">
-        <button class="top__link" type="button">Напитки</button>
+      <li class="top__item">
+        <button class="top__link" type="button" data-tabs-path="beverages">
+          Напитки
+        </button>
       </li>
-      <li class="top__item" data-filter=".category-d">
-        <button class="top__link" type="button">Бакалея</button>
+      <li class="top__item">
+        <button class="top__link" type="button" data-tabs-path="main">
+          Бакалея
+        </button>
       </li>
     </ul>
     <div class="top__content">
-      <article class="product mix category-a">
+      <article class="product" data-tabs-target="main">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -62,7 +72,7 @@
         </ul>
       </article>
 
-      <article class="product mix category-a">
+      <article class="product" data-tabs-target="beverages">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -106,7 +116,7 @@
         </ul>
       </article>
 
-      <article class="product mix category-b">
+      <article class="product" data-tabs-target="beverages">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -150,7 +160,7 @@
         </ul>
       </article>
 
-      <article class="product mix category-b">
+      <article class="product mix category-b" data-tabs-target="settings">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -194,7 +204,7 @@
         </ul>
       </article>
 
-      <article class="product mix category-c">
+      <article class="product" data-tabs-target="settings">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -238,7 +248,7 @@
         </ul>
       </article>
 
-      <article class="product mix category-c">
+      <article class="product" data-tabs-target="settings">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -282,7 +292,7 @@
         </ul>
       </article>
 
-      <article class="product mix category-d">
+      <article class="product" data-tabs-target="beverages">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -326,7 +336,7 @@
         </ul>
       </article>
 
-      <article class="product mix category-d">
+      <article class="product mix category-d" data-tabs-target="settings">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
