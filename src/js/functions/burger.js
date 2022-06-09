@@ -40,3 +40,7 @@ import { enableScroll } from '../functions/enable-scroll';
     });
   });
 })();
+
+
+
+var mixer = mixitup('.top__filter');

@@ -4,7 +4,7 @@
   Swiper.use([Navigation, Pagination]);
 
   const mySwiper = new Swiper('.swiper', {
-  loop: true,
+  // loop: true,
 
   // If we need pagination
   pagination: {

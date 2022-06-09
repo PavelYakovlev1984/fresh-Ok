@@ -2,24 +2,24 @@
   <div class="container">
     <h2 class="title top__title">Топовые товары</h2>
     <ul class="top__filter list-reset">
-      <li class="top__item">
+      <li class="top__item" data-filter="all">
         <button class="top__link" type="button">Все товары</button>
       </li>
-      <li class="top__item">
+      <li class="top__item" data-filter=".category-a">
         <button class="top__link" type="button">Фрукты</button>
       </li>
-      <li class="top__item">
+      <li class="top__item" data-filter=".category-b">
         <button class="top__link" type="button">Овощи</button>
       </li>
-      <li class="top__item">
+      <li class="top__item" data-filter=".category-c">
         <button class="top__link" type="button">Напитки</button>
       </li>
-      <li class="top__item">
+      <li class="top__item" data-filter=".category-d">
         <button class="top__link" type="button">Бакалея</button>
       </li>
     </ul>
     <div class="top__content">
-      <article class="product">
+      <article class="product mix category-a">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -62,7 +62,7 @@
         </ul>
       </article>
 
-      <article class="product">
+      <article class="product mix category-a">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -106,7 +106,7 @@
         </ul>
       </article>
 
-      <article class="product">
+      <article class="product mix category-b">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -150,7 +150,7 @@
         </ul>
       </article>
 
-      <article class="product">
+      <article class="product mix category-b">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -194,7 +194,7 @@
         </ul>
       </article>
 
-      <article class="product">
+      <article class="product mix category-c">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -238,7 +238,7 @@
         </ul>
       </article>
 
-      <article class="product">
+      <article class="product mix category-c">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -282,7 +282,7 @@
         </ul>
       </article>
 
-      <article class="product">
+      <article class="product mix category-d">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -326,7 +326,7 @@
         </ul>
       </article>
 
-      <article class="product">
+      <article class="product mix category-d">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -374,4 +374,6 @@
       Показать еще
     </button>
   </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/mixitup.min.js"></script>
 </section>
