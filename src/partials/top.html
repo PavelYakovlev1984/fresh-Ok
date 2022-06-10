@@ -3,17 +3,21 @@
     <h2 class="title top__title">Топовые товары</h2>
     <ul class="top__filter list-reset">
       <li class="top__item">
-        <button class="top__link" type="button" data-tabs-path="main">
+        <button
+          class="top__link top__link--active"
+          type="button"
+          data-tabs-path="products"
+        >
           Все товары
         </button>
       </li>
       <li class="top__item">
-        <button class="top__link" type="button" data-tabs-path="main">
+        <button class="top__link" type="button" data-tabs-path="fruit">
           Фрукты
         </button>
       </li>
       <li class="top__item">
-        <button class="top__link" type="button" data-tabs-path="main">
+        <button class="top__link" type="button" data-tabs-path="vegetables">
           Овощи
         </button>
       </li>
@@ -23,13 +27,13 @@
         </button>
       </li>
       <li class="top__item">
-        <button class="top__link" type="button" data-tabs-path="main">
+        <button class="top__link" type="button" data-tabs-path="grocery">
           Бакалея
         </button>
       </li>
     </ul>
     <div class="top__content">
-      <article class="product" data-tabs-target="main">
+      <article class="product top__content--active" data-tabs-target="products">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -72,7 +76,7 @@
         </ul>
       </article>
 
-      <article class="product" data-tabs-target="beverages">
+      <article class="product top__content--active" data-tabs-target="fruit">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -116,7 +120,7 @@
         </ul>
       </article>
 
-      <article class="product" data-tabs-target="beverages">
+      <article class="product top__content--active" data-tabs-target="fruit">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -160,7 +164,7 @@
         </ul>
       </article>
 
-      <article class="product mix category-b" data-tabs-target="settings">
+      <article class="product top__content--active" data-tabs-target="grocery">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -204,7 +208,10 @@
         </ul>
       </article>
 
-      <article class="product" data-tabs-target="settings">
+      <article
+        class="product top__content--active"
+        data-tabs-target="beverages"
+      >
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -248,7 +255,10 @@
         </ul>
       </article>
 
-      <article class="product" data-tabs-target="settings">
+      <article
+        class="product top__content--active"
+        data-tabs-target="vegetables"
+      >
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -292,7 +302,7 @@
         </ul>
       </article>
 
-      <article class="product" data-tabs-target="beverages">
+      <article class="product top__content--active" data-tabs-target="grocery">
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -336,7 +346,10 @@
         </ul>
       </article>
 
-      <article class="product mix category-d" data-tabs-target="settings">
+      <article
+        class="product top__content--active"
+        data-tabs-target="vegetables"
+      >
         <ul class="product__top list-reset">
           <li class="product__left">
             <ul class="product__badges list-reset">
@@ -384,6 +397,6 @@
       Показать еще
     </button>
   </div>
-  <script src="js/jquery.js"></script>
-  <script src="js/mixitup.min.js"></script>
+  <!-- <script src="js/jquery.js"></script>
+  <script src="js/mixitup.min.js"></script> -->
 </section>
